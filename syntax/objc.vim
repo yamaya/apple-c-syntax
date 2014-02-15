@@ -52,6 +52,7 @@ syn region objcContainerLiteralsDictionary matchgroup=objcContainerLiteralsBrack
 hi def link objcStatement									cStatement
 hi def link objcOperator									cOperator
 hi def link objcRepeatFor									objcStatement
+hi def link objcRepeatForIn								objcRepeatFor
 hi def link objcAccess										objcStatement
 hi def link objcStructure									cStructure
 hi def link objcPropertyKeyword						objcStatement
