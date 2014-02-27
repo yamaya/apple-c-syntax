@@ -34,8 +34,8 @@ syn match objcFormat "%@" contained display
 syn region objcString	start=/@"/ skip=/\\\\\|\\"\|\\$/ excludenl end=/"/ end=/$/ contains=cSpecial,cFormat,objcFormat,@Spell display oneline
 
 " プロパティ宣言構文 - nonatomicなどをハイライトするため
-syn region objcProperty start="@property\s*(" end=")" transparent contains=objcPropertyKeyword,objcPropertyAttributes display oneline
-syn match objcPropertyKeyword "@property\>" contained display
+syn region objcProperty start="@property\s*(" end=")" transparent contains=objcPropertyAttributes display oneline
+syn match objcPropertyKeyword "@property\>" display
 syn match objcPropertyAttributes "\<\%(strong\|copy\|weak\|retain\|assign\|read\%(only\|write\)\|\%(non\)\=atomic\|[gs]etter\)\>" contained
 
 " メッセージ送信構文 - [の直後は\Iか[か@とし空白は許可しない
