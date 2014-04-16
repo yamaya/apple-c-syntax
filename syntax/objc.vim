@@ -26,7 +26,7 @@ syn keyword objcConstant __OBJC__ __OBJC2__ __clang__
 syn keyword objcType id Class Protocol SEL IMP BOOL
 syn match objcStorageClass "\<__\%(bridge\%(_\%(retained\|transfer\)\)\=\|autoreleasing\|unsafe_unretained\|strong\|weak\|unused\)\>" display
 syn match objcAccess "@\%(public\|private\|protected\|optional\|required\|package\)\>" display
-syn match objcStructure "@\%(interface\|class\|implementation\|protocol\|end\)\>" display
+syn match objcStructure "@\%(interface\|class\|implementation\|protocol\|end\|compatibility_alias\)\>" display
 syn match objcStatement "@\%(defs\|encode\|selector\|synthesize\|dynamic\|autoreleasepool\)\>" display
 syn match objcStatement "@\%(try\|catch\|finally\|throw\|synchronized\)\>" display
 syn match objcInclude "^\s*\%(%:\|#\)\s*import\>\s*["<]" contains=cIncluded display
