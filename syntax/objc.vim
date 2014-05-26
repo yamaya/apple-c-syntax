@@ -1,3 +1,4 @@
+scriptencoding utf-8
 " Vim syntax file
 " Language:     Objective-C
 " Maintainer:   Kazunobu Kuriyama <kazunobu.kuriyama@nifty.com>
@@ -44,7 +45,7 @@ syn region objcMessage start="\[\%([@\[]\|\I\)" end="\]" transparent
 syn clear @cLabelGroup cUserCont cUserLabel
 
 " オブジェクトリテラル、ボックス式、コンテナリテラル
-syn match objcLiteralNumber "@\%([-+]\?\%(\d\+\%(\.\d*\|L\?[UL]\)\?\|\.\d\+\)\|0x\x\+\%(u\=l\{0,2}\|ll\=u\)\|YES\|NO\|\%(FLT\|L\=DBL\)_\%(MIN\|MAX\)\)" display
+syn match objcLiteralNumber "@\%(0x\x\+\%(u\=l\{0,2}\|ll\=u\)\|[-+]\?\%(\d\+\%(\.\d*\|L\?[UL]\)\?\|\.\d\+\)\|YES\|NO\|\%(FLT\|L\=DBL\)_\%(MIN\|MAX\)\)" display
 syn region objcBoxedExpression matchgroup=objcBoxedExpressionBrackets start="@(" end=")" transparent
 syn region objcContainerLiteralsArray matchgroup=objcContainerLiteralsBrackets start="@\[" end="\]" transparent display
 syn region objcContainerLiteralsDictionary matchgroup=objcContainerLiteralsBrackets start="@{" end="}" transparent display
