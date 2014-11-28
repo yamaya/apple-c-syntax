@@ -10,7 +10,7 @@ scriptencoding utf-8
 if exists("b:current_syntax")
   finish
 endif
-if &filetype != 'objcpp'
+if &filetype !~# '\v^objcpp>'
   syn clear
   runtime! syntax/c.vim
   runtime! syntax/c/*.vim
@@ -69,8 +69,8 @@ hi def link objcClass											Tag
 hi def link objcProtocol									objcClass
 hi def link objcPropertyAttributes				objcStorageClass
 hi def link objcLiteralNumber							Constant
-hi def link objcBoxedExpressionBrackets		Directory
-hi def link objcContainerLiteralsBrackets	Directory
+hi def link objcBoxedExpressionBrackets		cStatement
+hi def link objcContainerLiteralsBrackets	cStatement
 
 let b:current_syntax = "objc"
 
