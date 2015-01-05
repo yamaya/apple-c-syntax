@@ -55,7 +55,7 @@ hi def link objcOperator									cOperator
 hi def link objcRepeatFor									objcStatement
 hi def link objcRepeatForIn								objcRepeatFor
 hi def link objcAccess										objcStatement
-hi def link objcStructure									cStructure
+hi def link objcStructure									objcStatement
 hi def link objcPropertyKeyword						objcStatement
 hi def link objcFunction									Function
 hi def link objcInclude										cInclude
