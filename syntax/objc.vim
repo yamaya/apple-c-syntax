@@ -10,7 +10,7 @@ scriptencoding utf-8
 if exists("b:current_syntax")
   finish
 endif
-if &filetype !~# '\v^objcpp>'
+if &filetype !~# '\v^objcpp(\.\k\+)?'
   syn clear
   runtime! syntax/c.vim
   runtime! syntax/c/*.vim
